@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;;
+}
+
+body{
+    background-image: url("./dccl--responsive-contact-page/bg-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Header styles */
+header{
+    padding: 2% 4%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+
+/* Main styles */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+.title{
+    width: 50%;
+    text-align: center;
+}
+.title h1{
+    font-size: 64px;
+    color: #F8FAFC;
+ }
+ .title h2{
+     font-size: 2.2rem;
+     color:#F8FAFC;
+  }
+/* Form styles */
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin: 5% 5%;
+    width: 60%;
+    display: grid;
+    grid-template-columns:  repeat(2,1fr) ;
+    /* justify-content: center; */
+    border: none;
+    border-radius: 20px;
+    padding: 5% ;
+    color: #FFFFFF;
+    background-color: #CDD5E050;
+   
+}
+form input{
+  padding: 6%;
+   width: 90%;
+  
+}
+form select{
+    padding: 5.3%;
+    width:90%;
+}
+.form  label[for="email"],#select2{
+    margin-top: 2.7%;
+   
+}
+option{
+    font-size: 1.2rem;
+}
+#select2{
+    padding: 5.5%;
+    width: 100%;
+}
+.form input[type="email"]{
+   
+    width: 100%;
+    padding: 6.1% ;
+}
+
+form label,input,select{
+    display: block;
+   margin: 3% 0;
+   border-radius: 20px;
+   font-size: 1.2rem;
+}
+form label{
+    color: #FFFFFF;
+}
+form textarea{
+    margin-top: 2%;
+    width: 200%;
+   border-radius: 20px;
+   padding: 5%;
+   font-size: 1.2rem;
+}
+.form input[type="submit"]{
+
+    width: 200%;
+    padding: 9% ;
+}
+
+@media screen and (max-width:640px) {
+   
+    header{
+        padding: 4% 4%;
+    
+    }
+    /* Title styles */
+    .title{
+        width: 90%;
+        padding: 5% ;
+    }
+    .title h1{
+        font-size: 50px;
+        color: #F8FAFC;
+     }
+     .title h2{
+        margin-top: 3%;
+         font-size: 1.5rem;
+         color:#F8FAFC;
+      }
+
+      /* main section styles */
+      form{
+        width: 100%;
+        grid-template-columns:  repeat(1,1fr) ;
+       
+    }
+    form textarea{
+        margin-top: 2%;
+        width: 100%;
+    }
+    form input{
+         width: 100%;
+        
+      }
+    .form input[type="submit"]{
+    
+        width: 100%;
+    }
+    #select1{
+        width: 100%;
+    }
+}
+@media screen and (min-width:640px) and (max-width:1024px){
+    /* title styles */
+    header{
+        padding: 4% 4%;
+    
+    }
+    /* Title styles */
+    .title{
+        width: 60%;
+        padding: 3% ;
+    }
+    .title h1{
+        font-size: 50px;
+        color: #F8FAFC;
+     }
+     .title h2{
+        margin-top: 3%;
+         font-size: 1.5rem;
+         color:#F8FAFC;
+      }
+
+      /* Main styles */
+      form{
+        margin: 5% 5%;
+        width: 90%;
+        display: grid;
+        grid-template-columns:  repeat(2,1fr) ;
+        /* justify-content: center; */
+        border: none;
+        border-radius: 20px;
+        padding: 5% ;
+        color: #FFFFFF;
+        background-color: #CDD5E050;
+       
+    }
+}
